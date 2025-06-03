@@ -2,9 +2,9 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new Google_Client();
-$client->setClientId('YOUR_CLIENT_ID');
-$client->setClientSecret('YOUR_CLIENT_SECRET');
-$client->setRedirectUri('https://your-vercel-project.vercel.app/google_callback.php');
+$client->setClientId('Client ID');
+$client->setClientSecret('Client Secret');
+$client->setRedirectUri('https://google-login-dw05.onrender.com/google_callback.php');
 
 if (isset($_GET['code'])) {
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
