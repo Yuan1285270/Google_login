@@ -16,7 +16,7 @@ if (isset($_GET['code'])) {
         $email = $userinfo->email;
 
         // 成功後轉回學校網站
-        header('Location: http://140.134.53.57/~D1285270/login_success.php?email=' . urlencode($email));
+        header('Location: http://140.134.53.57/~D1285270/front_web/login_success.php?email=' . urlencode($email));
         exit;
     } else {
         echo "錯誤：" . htmlspecialchars($token['error_description']);
